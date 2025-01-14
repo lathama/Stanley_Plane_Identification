@@ -1,0 +1,667 @@
+<!DOCTYPE html><html>
+<head>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Stanley Plane Identification</title>
+ <style>
+  html { line-height: 150%; margin: 0px; font-size:100%; }
+  body { background-color: #888; padding-top: 50px; padding-bottom: 50px; font-size:1.5em;}
+  #menubutton { padding: 10px; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #FFF; text-decoration: none; text-align: center; }
+  nav { display: none; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #FFF; }
+  nav a { display: block; padding: 10px 20px; text-decoration: none; text-align: center; color: #FFF; }
+  nav a:hover { background-color: #111; } nav:target { display: block !important; }
+  #articles > article:target ~ article:last-child, #articles > article { display: none; margin: 20px; padding: 20px; background-color: #aaa; }
+  #articles > :last-child, #articles > article:target { display: block; }
+  footer { background-color: #333; position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 10px; color: #FFF;}
+  footer a { text-decoration: none; color: #FFF; }
+  @media only screen and (min-width: 768px)
+  {
+   #menubutton { display: none; }
+   nav { display: block; padding: 0px 20px; }
+   nav a { display: inline-block; padding: 14px 16px; }
+   body { background-color: #eee; }
+  }
+ </style>
+</head>
+<body>
+ <a href="#navigation" id="menubutton">Menu</a>
+ <nav id="navigation">
+  <a href="#home">Stanley Plane Identification</a>
+  <a href="#tool">Identification Tool</a>
+  <a href="#types">Types</a>
+  <a href="#models">Models</a>
+ </nav>
+ <div id="articles">
+ <article id="tool">
+  <h1>About</h1>
+  <h3>Click though identification made easy.</h3>
+  <p>Based on various worksheets, hard to find books, and more I wanted to make a simple source of info.
+  <ul>
+  <li><a href="#tool_step_1">Start</a></li>
+  </ul>
+  </p>
+ </article>
+ <article id="tool_step_1">
+  <h1>Tool Step 1</h1>
+  <h3>Number of Patent Dates on Bed?</h3>
+  <p>
+  <ul>
+  <li><a href="#tool_step_1_0">0 Zero or None</a></li>
+  <li><a href="#tool_step_1_1">1 One</a></li>
+  <li><a href="#tool_step_1_2">2 Two</a></li>
+  <li><a href="#tool_step_1_3">3 Three</a></li>
+  </ul>
+  </p>
+ </article>
+ <article id="tool_step_1_0">
+  <h1>Zero Patent Dates On Bed</h1>
+  <h3>Is there a raised ring under the knob?</h3>
+  <p><ul>
+  <li><a href="#tool_step_1_0_0">No</a></li>
+  <li><a href="#tool_step_1_0_1">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_1">
+  <h1>No Patent Date On Bed and Raised Ring</h1>
+  <h3></h3>
+  <p><ul>
+  <li><a href="#type_20">Bed painted Blue.</a></li>
+  <li><a href="#type_15">Toe and Heel have raised casting.</a></li>
+  <li><a href="#type_19">Stanely PRINTED on lateral adjustment lever.</a></li>
+  <li><a href="#type_18">Depth Adjustment knurling diagonal.</a></li>
+  <li><a href="#type_17">Wartime features like red or black painted tote and knob, steel or hard rubber depth adjustment heavier bottom casting.</a></li>
+  <li><a href="#type_16">None of the above.</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0">
+  <h1>No Patent Date On Bed and No Raised Ring</h1>
+  <h3>Is the Model cast into the bed? eg. No. 5</h3>
+  <p><ul>
+  <li><a href="#tool_step_1_0_0_0">No</a></li>
+  <li><a href="#tool_step_1_0_0_1">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_0">
+  <h1>No Patent Date On Bed and No Raised Ring and No Model Cast On Bed.</h1>
+  <h3>Does the lever cap have a recessed back?</h3>
+  <p><ul>
+  <li><a href="#tool_step_1_0_0_0_0">No</a></li>
+  <li><a href="#tool_step_1_0_0_1_1">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_0_0">
+  <h1>No Patent Date On Bed and No Raised Ring and No Model Cast On Bed and No Recessed Lever Cap.</h1>
+  <h3>Depth Adjustment nut stamped 'Bailey's Patent'?</h3>
+  <p><ul>
+  <li><a href="#type_1">No</a></li>
+  <li><a href="#type_2">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_0_1">
+  <h1>No Patent Date On Bed and No Raised Ring and No Model Cast On Bed and Recessed Lever Cap.</h1>
+  <h3>Arched rear of flat frog reciver?</h3>
+  <p><ul>
+  <li><a href="#type_3">No</a></li>
+  <li><a href="#type_4">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_1">
+  <h1>No Patent Date On Bed and No Raised Ring and Model Cast On Bed.</h1>
+  <h3>How Many Patent Dates on Lateral Adjustment Lever?</h3>
+  <p><ul>
+  <li><a href="#tool_step_1_0_0_0_0_0">0 Zero</a></li>
+  <li><a href="#type_8">1 One</a></li>
+  <li><a href="#type_5">2 Two</a></li>
+  <li><a href="#tool_step_1_0_0_1_0_3">3 Three</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_1_0">
+  <h1>No Patent Date On Bed and No Raised Ring and Model Cast On Bed and No Patent Dates On Lateral Adjustment Lever.</h1>
+  <h3>Stanley stamped into the lateral adjustment Lever?</h3>
+  <p><ul>
+  <li><a href="#type_5">No</a></li>
+  <li>Yes could be <a href="#type_8">Type 8</a> or <a href="#type_9">Type 9</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_0_0_1_3">
+  <h1>No Patent Date On Bed and No Raised Ring and Model Cast On Bed and No Patent Dates On Lateral Adjustment Lever.</h1>
+  <h3>Depth Adjustment nut stamped 'Bailey's Patent'?</h3>
+  <p><ul>
+  <li><a href="#type_7">No</a></li>
+  <li><a href="#type_6">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_1">
+  <h1>One Patent Date On Bed</h1>
+  <h3>Is there a raised ring under the knob?</h3>
+  <p><ul>
+  <li><a href="#type_13">No</a></li>
+  <li><a href="#type_14">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_2">
+  <h1>Two Patent Dates On Bed</h1>
+  <h3>Is the frog rib large and arched?</h3>
+  <p><ul>
+  <li><a href="#type_9">No</a></li>
+  <li><a href="#type_10">Yes</a></li>
+  </ul></p>
+ </article>
+ <article id="tool_step_1_3">
+  <h1>Three Patent Dates On Bed</h1>
+  <h3>What size depth adjustment knob is there?</h3>
+  <p><ul>
+  <li><a href="#type_12">Large 1.25 Inches</a></li>
+  <li><a href="#type_11">Small 1 Inch</a></li>
+  </ul></p>
+ </article>
+ <article id="models">
+  <h1>Stanley Hand Plane Models</h1>
+  <h3></h3>
+  <p>
+  <dl>
+  <dt>A (Prefix)</dt>
+  <dd>Aluminum</dd>
+  <dt>C (Subscript)</dt>
+  <dd>Corrugated</dd>
+  <dt>G (Prefix)</dt>
+  <dd>Gage</dd>
+  <dt>H (Prefix)</dt>
+  <dd>Handyman</dd>
+  <dt>M</dt>
+  <dd>Malleable</dd>
+  <dt>P (Subscript)</dt>
+  <dd>Plane (Used when duplicate models existed in catalog)</dd>
+  <dt>Years</dt>
+  <dd>Stanley bought Bailey in 1869 and the first catalog was in 1870.</dd>
+  <dd>Stanley (branded packaging) planes could have been built in late 1869.</dd>
+
+  Smooth Bottom
+  <ul>
+  <li><a href="#model_1">Model 1</a></li>
+  <li><a href="#model_2">Model 2</a></li>
+  <li><a href="#model_3">Model 3</a></li>
+  <li><a href="#model_4">Model 4</a></li>
+  <li><a href="#model_4_5">Model 4 1/2</a></li>
+  <li><a href="#model_5">Model 5</a></li>
+  <li><a href="#model_5_25">Model 5 1/4</a></li>
+  <li><a href="#model_5_5">Model 5 1/2</a></li>
+  <li><a href="#model_6">Model 6</a></li>
+  <li><a href="#model_7">Model 7</a></li>
+  <li><a href="#model_8">Model 8</a></li>
+  </ul>
+
+  Corrogated
+  <ul>
+  <li><a href="#model_2c">Model 2 C</a></li>
+  <li><a href="#model_3c">Model 3 C</a></li>
+  <li><a href="#model_4c">Model 4 C</a></li>
+  <li><a href="#model_4_5c">Model 4 1/2 C</a></li>
+  <li><a href="#model_5c">Model 5 C</a></li>
+  <li><a href="#model_5_25c">Model 5 1/4 C</a></li>
+  <li><a href="#model_5_5c">Model 5 1/2 C</a></li>
+  <li><a href="#model_6c">Model 6 C</a></li>
+  <li><a href="#model_7c">Model 7 C</a></li>
+  <li><a href="#model_8c">Model 8 C</a></li>
+  </ul>
+  </p>
+ </article>
+ <article id="model_1">
+  <h1>Stanley No. 1 Hand Plane</h1>
+  <h3>The rarest plane</h3>
+  <p>
+  <ul>
+  <li>1870 - 1943</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 5-1/2 inches</li>
+  <li>Width of cutter: 1-1/4 inches</li>
+  <li>Weight: 1-1/8 LBs</li>
+  <li>No lateral adjustment feature</li>
+  </ul></p>
+ </article>
+ <article id="model_2">
+  <h1>Stanley No. 2 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1958</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 7 inches</li>
+  <li>Width of cutter: 1-5/8 inches</li>
+  <li>Weight: 2-1/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_3">
+  <h1>Stanley No. 3 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1973</li>
+  <li>Corrugated 1898 - 1972</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 8 inches</li>
+  <li>Width of cutter: 1-3/4 inches</li>
+  <li>Weight: 3-1/8 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_4">
+  <h1>Stanley No. 4 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1973</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 9 inches or 9-1/4 inches</li>
+  <li>Width of cutter: 2 inches</li>
+  <li>Weight: 3-3/4 LBs</li></li>
+  </ul></p>
+ </article>
+ <article id="model_4_5">
+  <h1>Stanley No. 4 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1884 - 1958</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 10 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 4-3/4 LBs</li></li>
+  </ul></p>
+ </article>
+ <article id="model_5">
+  <h1>Stanley No. 5 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1973</li>
+  <li>Jack Plane</li>
+  <li>Length: 14 inches</li>
+  <li>Width of cutter: 2 inches</li>
+  <li>Weight: 4-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_5_25">
+  <h1>Stanley No. 5 1/4 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1922 - 1973</li>
+  <li>Jack Plane</li>
+  <li>Length: 11-1/2 inches</li>
+  <li>Width of cutter: 1-3/4 inches</li>
+  <li>Weight: 3-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_5_5">
+  <h1>Stanley No. 5 1/2 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1962</li>
+  <li>Jack Plane</li>
+  <li>Length: 15 inches</li>
+  <li>Width of cutter: 2-1/4 inches, after 1939 2-3/8 inches</li>
+  <li>Weight: 6-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_6">
+  <h1>Stanley No. 6 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1973</li>
+  <li>Corrugated 1898 - 1973</li>
+  <li>Fore Plane</li>
+  <li>Length: 18 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 7-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_7">
+  <h1>Stanley No. 7 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1973</li>
+  <li>Jointer Plane</li>
+  <li>Length: 22 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 8-1/8 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_8">
+  <h1>Stanley No. 8 Hand Plane</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1870 - 1958</li>
+  <li>Jointer Plane</li>
+  <li>Length: 24 inches</li>
+  <li>Width of cutter: 2-5/8 inches</li>
+  <li>Weight: 9-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_2c">
+  <h1>Stanley No. 2 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1943</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 7 inches</li>
+  <li>Width of cutter: 1-5/8 inches</li>
+  <li>Weight: 2-1/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_3c">
+  <h1>Stanley No. 3 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1972</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 8 inches</li>
+  <li>Width of cutter: 1-3/4 inches</li>
+  <li>Weight: 3-1/8 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_4c">
+  <h1>Stanley No. 4 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1973</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 9 inches or 9-1/4 inches</li>
+  <li>Width of cutter: 2 inches</li>
+  <li>Weight: 3-3/4 LBs</li></li>
+  </ul></p>
+ </article>
+ <article id="model_4_5c">
+  <h1>Stanley No. 4 1/2 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1958</li>
+  <li>Smoothing Plane</li>
+  <li>Length: 10 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 4-3/4 LBs</li></li>
+  </ul></p>
+ </article>
+ <article id="model_5c">
+  <h1>Stanley No. 5 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1973</li>
+  <li>Jack Plane</li>
+  <li>Length: 14 inches</li>
+  <li>Width of cutter: 2 inches</li>
+  <li>Weight: 4-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_5_25c">
+  <h1>Stanley No. 5 1/4 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1922 - 1942</li>
+  <li>Jack Plane</li>
+  <li>Length: 11-1/2 inches</li>
+  <li>Width of cutter: 1-3/4 inches</li>
+  <li>Weight: 3-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_5_5c">
+  <h1>Stanley No. 5 1/2 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1958</li>
+  <li>Jack Plane</li>
+  <li>Length: 15 inches</li>
+  <li>Width of cutter: 2-1/4 inches, after 1939 2-3/8 inches</li>
+  <li>Weight: 6-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_6c">
+  <h1>Stanley No. 6 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1973</li>
+  <li>Fore Plane</li>
+  <li>Length: 18 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 7-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_7c">
+  <h1>Stanley No. 7 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1964</li>
+  <li>Jointer Plane</li>
+  <li>Length: 22 inches</li>
+  <li>Width of cutter: 2-3/8 inches</li>
+  <li>Weight: 8-1/8 LBs</li>
+  </ul></p>
+ </article>
+ <article id="model_8c">
+  <h1>Stanley No. 8 Hand Plane Corrugated</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li>1898 - 1958</li>
+  <li>Jointer Plane</li>
+  <li>Length: 24 inches</li>
+  <li>Width of cutter: 2-5/8 inches</li>
+  <li>Weight: 9-3/4 LBs</li>
+  </ul></p>
+ </article>
+ <article id="types">
+  <h1>Stanley Hand Plane Types</h1>
+  <h3></h3>
+  <p>
+  <ul>
+  <li><a href="#type_1">Type 1</a></li>
+  <li><a href="#type_2">Type 2</a></li>
+  <li><a href="#type_3">Type 3</a></li>
+  <li><a href="#type_4">Type 4</a></li>
+  <li><a href="#type_5">Type 5</a></li>
+  <li><a href="#type_6">Type 6</a></li>
+  <li><a href="#type_7">Type 7</a></li>
+  <li><a href="#type_8">Type 8</a></li>
+  <li><a href="#type_9">Type 9</a></li>
+  <li><a href="#type_10">Type 10</a></li>
+  <li><a href="#type_11">Type 11</a></li>
+  <li><a href="#type_12">Type 12</a></li>
+  <li><a href="#type_13">Type 13</a></li>
+  <li><a href="#type_14">Type 14</a></li>
+  <li><a href="#type_15">Type 15</a></li>
+  <li><a href="#type_16">Type 16</a></li>
+  <li><a href="#type_17">Type 17</a></li>
+  <li><a href="#type_18">Type 18</a></li>
+  <li><a href="#type_19">Type 19</a></li>
+  <li><a href="#type_20">Type 20</a></li>
+  <li><a href="#type_21">Type 21</a></li>
+  </ul></p>
+ </article>
+ <article id="type_1">
+  <h1>Type 1</h1>
+  <h3>1867? - 1869</h3>
+  <p>
+  <ul>
+  <li>Made in Boston USA.</li>
+  <li>Stanley bought Bailey in 1869.</li>
+  </ul></p>
+ </article>
+ <article id="type_2">
+  <h1>Type 2</h1>
+  <h3>1869 - 1872</h3>
+  <p>Stanley bought Bailey in 1869</p>
+ </article>
+ <article id="type_3">
+  <h1>Type 3</h1>
+  <h3>1872 - 1873</h3>
+  <p></p>
+ </article>
+ <article id="type_4">
+  <h1>Type 4</h1>
+  <h3>1874 - 1884</h3>
+  <p></p>
+ </article>
+ <article id="type_5">
+  <h1>Type 5</h1>
+  <h3>1885 - 1888</h3>
+  <p>
+  <ul>
+  <li>Lateral adjustment lever appears Patents 111890, 173177, 306877 and 386509</li>
+  </ul></p>
+ </article>
+ <article id="type_6">
+  <h1>Type 6</h1>
+  <h3>1888 - 1892</h3>
+  <p></p>
+ </article>
+ <article id="type_7">
+  <h1>Type 7</h1>
+  <h3>1893 - 1899</h3>
+  <p></p>
+ </article>
+ <article id="type_8">
+  <h1>Type 8</h1>
+  <h3>1899 - 1902</h3>
+  <p></p>
+ </article>
+ <article id="type_9">
+  <h1>Type 9</h1>
+  <h3>1902 - 1907</h3>
+  <p>
+  <ul>
+  <li>“Bailey” appears on bed.</li>
+  <li>Two Patent Dates on bed</li>
+  <li>Has Lateral adjustment lever</li>
+  <li>Redesigned frog (two step)</li>
+  </ul></p>
+ </article>
+ <article id="type_10">
+  <h1>Type 10</h1>
+  <h3>1907 - 1909</h3>
+  <p>Two Patent Dates</p>
+ </article>
+ <article id="type_11">
+  <h1>Type 11</h1>
+  <h3>1910 - 1918</h3>
+  <p>
+  <ul>
+  <li>Three Patent Dates</li>
+  <li>Lateral adjustment lever</li>
+  <li>Frog adjustment screw appears</li>
+  </ul></p>
+ </article>
+ <article id="type_12">
+  <h1>Type 12</h1>
+  <h3>1919 - 1924</h3>
+  <p>
+  <ul>
+  <li>First of “Sweetheart” types.</li>
+  <li>Three Patent Dates</li>
+  <li>Lateral adjustment lever</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul></p>
+ </article>
+ <article id="type_13">
+  <h1>Type 13</h1>
+  <h3>1925 - 1928</h3>
+  <p>
+  <ul>
+  <li>Sweetheart Lateral adjustment lever</li>
+  <li>“Stanley” appears on lever cap.</li>
+  <li>One Patent Date</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul>
+  </p>
+ </article>
+ <article id="type_14">
+  <h1>Type 14</h1>
+  <h3>1929 - 1930</h3>
+  <p>
+  <ul>
+  <li>“Made in USA” on bed appers</li>
+  <li>Sweetheart</li>
+  <li>Lateral adjustment lever</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul>
+  </p>
+ </article>
+ <article id="type_15">
+  <h1>Type 15</h1>
+  <h3>1931 - 1932</h3>
+  <p>
+  <ul>
+  <li>“Made in USA” on bed</li>
+  <li>Lateral adjustment lever</li>
+  <li>Last of the Sweethearts</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul></p>
+ </article>
+ <article id="type_16">
+  <h1>Type 16</h1>
+  <h3>1933 - 1941</h3>
+  <p>
+  <ul>
+  <li>“Made in USA” on bed</li>
+  <li>Kidney shaped lever cap hole. (Patent 1933)</li>
+  <li>Lateral adjustment lever</li>
+  <li>Raised Ring for front knob added</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul>
+  </p>
+ </article>
+ <article id="type_17">
+  <h1>Type 17</h1>
+  <h3>1942 - 1945</h3>
+  <p>
+  <ul>
+  <li>War production</li>
+  <li>Often without frog adjust</li>
+  <li>Steel or hard rubber adjustment nut</li>
+  <li>1922 introduced the taller front knob</li>
+  </ul></p>
+ </article>
+ <article id="type_18">
+  <h1>Type 18</h1>
+  <h3>1946 - 1947</h3>
+  <p></p>
+ </article>
+ <article id="type_19">
+  <h1>Type 19</h1>
+  <h3>1948 - 1961</h3>
+  <p></p>
+ </article>
+ <article id="type_20">
+  <h1>Type 20</h1>
+  <h3>1962 - 1967</h3>
+  <p>Blue Paint</p>
+ </article>
+ <article id="type_21">
+  <h1>Type 20</h1>
+  <h3>1968 - 19??</h3>
+  <p>Red Paint</p>
+ </article>
+ <article id="home">
+  <h1>Stanley Hand Plane Information and Identification</h1>
+  <h3>Welcome</h3>
+  <p>Do you need or want more information about Stanley hand planes? You are in the right place.
+  </p>
+  <p>Resources and Credits:
+  <ul>
+  <li>The Stanley Plane by Alvin Sellens 1975 Published by The Early American Industries Association</li>
+  </ul>
+  </p>
+ </article>
+ </div>
+ <footer>Copyleft You! <a href="https://github.com/lathama/Stanley_Plane_Identification">Source Code</a></footer>
+</body></html>
