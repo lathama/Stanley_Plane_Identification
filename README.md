@@ -10,6 +10,11 @@ While useful, please double check with other sources.
 
 Download and open the html/index.html file in a browswer. `CTRL + o` is a common shortcut.
 
+# TODO
+
+- Add Photos
+- Add Diagrams
+
 # Resources
 
 - https://github.com/lathama/Stanley_Plane_Identification
