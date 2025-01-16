@@ -17,7 +17,6 @@ View it online via https://html-preview.github.io/?url=https://github.com/latham
 # TODO
 
 - Add Photos
-- Add Diagrams
 
 # Resources
 
