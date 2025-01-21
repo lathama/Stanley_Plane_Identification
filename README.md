@@ -12,7 +12,7 @@ Download and open the html/index.html file in a browswer. `CTRL + o` is a common
 
 # Online
 
-View it online via https://html-preview.github.io/?url=https://github.com/lathama/Stanley_Plane_Identification/blob/main/html/index.html assuming the html-preview continues to work.
+View it online via https://lathama.net/vintage/
 
 # TODO
 
