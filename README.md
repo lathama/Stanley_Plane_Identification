@@ -16,7 +16,8 @@ View it online via https://lathama.net/vintage/
 
 # TODO
 
-- Add Photos
+- Deeper topics on other manufacturers
+- Full line of Stanley planes and scrapers
 
 # Resources
 
