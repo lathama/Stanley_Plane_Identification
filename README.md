@@ -1,14 +1,13 @@
-# Stanley_Plane_Identification
+# Stanley Plane Identification
 
-Information to aid in identifiying Stanley Bench Planes
-
-Capturing some work I did to aid in identifying Stanley Bench Planes
-
-While useful, please double check with other sources.
+Information to aid in identifiying Stanley Bench Planes. While useful, please
+double check with other sources. This is presented in a single HTML file that
+is just text with links to various targets within the same page.
 
 # Usage
 
-Download and open the html/index.html file in a browswer. `CTRL + o` is a common shortcut.
+Download and open the html/index.html file in a browswer. `CTRL + o` is a
+common shortcut.
 
 # Online
 
