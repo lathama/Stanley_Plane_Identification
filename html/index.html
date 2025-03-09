@@ -10,17 +10,17 @@
  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
  <style>
   /* Mobile first then alter for computer */
-  *,html { line-height: 150%; font-size: 100%; }
+  *, html { line-height: 150%; font-size: 100%; }
   body { background-color: #eee; padding-top: 2em; padding-bottom: 2em; font-size:1.5em; }
   a { text-decoration: none; }
-  h1,h2 { line-height: 150%; }
+  h1, h2 { line-height: 150%; }
   #menubutton { padding: 10px; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #fff; text-align: center; }
   nav { display: none; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #fff; text-align: center;}
   nav a { display: block; padding: 7px 14px; text-align: center; color: #fff; }
   nav a:hover { background-color: #111; }
   nav:target { display: block !important; }
-  dl,dt,dd,ul,li { padding: .2em .2em .2em 1em; list-style-type: square; list-style-position: inside; }
-  dt,li { font-weight: bold; }
+  dl, dt, dd, ul, li { padding: .2em .2em .2em 1em; list-style-type: square; list-style-position: inside; }
+  dt, li { font-weight: bold; }
   #articles { width: fit-content; margin: auto; }
   #articles > article:target ~ article:last-child, #articles > article { display: none; }
   #articles > :last-child, #articles > article:target { display: block; }
@@ -28,6 +28,7 @@
   footer { background-color: #333; position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 5px; color: #fff; text-align: center; }
   footer a { text-decoration: none; color: #fff; }
   img { max-width: 90%; height: auto; }
+  .printonly { display: none; }
   /* Not mobile aka computer */
   @media only screen and ( min-width: 768px)
   {
@@ -35,6 +36,13 @@
    nav { display: block; padding: 0px 20px; }
    nav a { display: inline-block; padding: 14px 16px; }
    body { background-color: #eee; }
+  }
+  @media print {
+   *, html, body, li { margin: 5px; padding: 5px; font-size: 1em; font-weight: normal; }
+   #menubutton, footer { display: none !important; }
+   .printonly { display: block;}
+   a, a:visited { text-decoration: underline; }
+   a[href]:after { content: ' (' attr(href) ')'; }
   }
  </style>
 </head>
@@ -50,6 +58,7 @@
   <a href="#glossary">Glossary</a>
   <a href="#faq">FAQ</a>
  </nav>
+ <h1 class="printonly">Stanley Bench Plane</h1>
  <div id="articles">
  <article id="tool">
   <h2>Number of Patent Dates on Bed?</h2>
