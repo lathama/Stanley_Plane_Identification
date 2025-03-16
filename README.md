@@ -4,20 +4,26 @@ Information to aid in identifiying Stanley Bench Planes. While useful, please
 double check with other sources. This is presented in a single HTML file that
 is just text with links to various targets within the same page.
 
-# Usage
+## Usage
 
 Download and open the html/index.html file in a browswer. `CTRL + o` is a
 common shortcut.
 
-# Online
+## Online
 
 View it online via https://lathama.net/vintage/
 
-# TODO
+## TODO
 
 - Deeper topics on other manufacturers
 - Full line of Stanley planes and scrapers
 
-# Resources
+## Resources
 
 - https://github.com/lathama/Stanley_Plane_Identification
+
+## Thanks
+
+If you find this useful and want to say thanks I have an amazon wishlist
+
+- https://www.amazon.com/hz/wishlist/ls/1L2X1DMW98TCQ
