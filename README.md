@@ -15,8 +15,14 @@ View it online via https://lathama.net/vintage/
 
 ## TODO
 
-- Deeper topics on other manufacturers
-- Full line of Stanley planes and scrapers
+- [ ] Deeper topics on other manufacturers
+- [ ] Full line of Stanley planes and scrapers
+      - [ ] Block Planes to start
+
+## Ideas
+
+- Print drawings of planes and parts
+- Replacement tote and knob drawings
 
 ## Resources
 
