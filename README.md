@@ -30,6 +30,8 @@ View it online via https://lathama.net/vintage/
 
 ## Thanks
 
-If you find this useful and want to say thanks I have an amazon wishlist
+If you find this useful and want to say thanks I have an amazon wishlist sell
+stickers at Redbubble.
 
 - https://www.amazon.com/hz/wishlist/ls/1L2X1DMW98TCQ
+- https://www.redbubble.com/i/sticker/Bench-Plane-Diagram-by-gringomalvado/169505260.EJUG5
