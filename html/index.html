@@ -8,39 +8,30 @@
  <title>Stanley Bench Plane Identification</title>
  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
  <style>
-  /* Mobile first then alter for computer */
   *, html { line-height: 150%; font-size: 100%; font-family: "Times New Roman", Times, serif;}
-  body { padding-top: 2em; padding-bottom: 2em; font-size: 1.5em; background-color: color-mix(in srgb, Canvas, CanvasText 25%); color: color-mix(in srgb, CanvasText, Canvas 15%); }
+  body { padding-top: 2.5em; padding-bottom: 2em; }
   a { text-decoration: none; }
-  h1, h2 { line-height: 150%; font-size: 2em; }
   #menubutton { padding: 10px; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #fff; text-align: center; }
   nav { display: none; position: fixed; top: 0px; left: 0px; width: 100%; background-color: #333; color: #fff; text-align: center;}
   nav a { display: block; padding: 4px 7px; text-align: center; color: #fff; font-weight: bold; }
   nav a:hover { background-color: #111; }
   nav:target { display: block !important; }
-  dl, dt, dd, ul, li { padding: .2em .2em .2em 1em; list-style-type: square; list-style-position: inside; }
-  dt, li { font-weight: bold; }
-  #articles { width: fit-content; margin: auto; }
-  #articles > article:target ~ article:last-child, #articles > article { display: none; }
-  #articles > :last-child, #articles > article:target { display: block; }
-  p { padding: none; margin: none; }
-  footer { background-color: #333; position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 5px; color: #fff; text-align: center; }
-  footer a { text-decoration: none; color: #fff; }
-  img { max-width: 90%; height: auto; }
-  .printonly { display: none; }
-  /* Not mobile aka computer */
-  @media only screen and ( min-width: 768px )
-  {
+  article { width: fit-content; margin: auto; }
+  article:not(:target):not(#home), article:target ~ #home { display: none }
+  img { max-width: 90vw; height: auto; }
+  footer { position: fixed; bottom: 0px; left: 0px; width: 100%; padding: 5px; }
+  @media only screen and ( min-width: 768px ) {
+   *, html { font-size: 110%; }
    #menubutton { display: none; }
    nav { display: block; padding: 0px 0px; }
    nav a { display: inline-block; padding: 4px 6px; }
   }
   @media print {
-   *, html, body, li { margin: 5px; padding: 5px; font-size: 1em; font-weight: normal; }
-   #menubutton, footer, nav { display: none; }
-   .printonly { display: block;}
+   * { font-size: 14pt !important; font-weight: normal; }
+   nav { display: none; }
    a, a:visited { text-decoration: underline; }
    a[href]:after { content: ' (' attr(href) ')'; }
+   article { display: block !important; }
   }
  </style>
 </head>
@@ -55,9 +46,8 @@
   <a href="#glossary">Glossary</a>
   <a href="#faq">FAQ</a>
  </nav>
- <h1 class="printonly">Stanley Bench Plane</h1>
- <div id="articles">
  <article id="tool">
+  <p>Answer the questions to identify a Stanley Bench Plane.</p>
   <h2>Number of Patent Dates on Bed?</h2>
   <p><ul>
    <li><a href="#tool_step_1_0">0 Zero or None</a></li>
@@ -175,36 +165,144 @@
   </ul></p>
  </article>
  <article id="models">
-  <h2>Smooth Bottom Bench Plane</h2>
+  <h2>Planes and Scrapers</h2>
   <ul>
-   <li><a href="#model_1">Model No. 1</a></li>
-   <li><a href="#model_2">Model No. 2</a></li>
-   <li><a href="#model_3">Model No. 3</a></li>
-   <li><a href="#model_4">Model No. 4</a></li>
-   <li><a href="#model_4_5">Model No. 4 1/2</a></li>
-   <li><a href="#model_5">Model No. 5</a></li>
-   <li><a href="#model_5_25">Model No. 5 1/4</a></li>
-   <li><a href="#model_5_5">Model No. 5 1/2</a></li>
-   <li><a href="#model_6">Model No. 6</a></li>
-   <li><a href="#model_7">Model No. 7</a></li>
-   <li><a href="#model_8">Model No. 8</a></li>
-  </ul>
-  <h2>Corrugated Bench Plane</h2>
-  <ul>
-   <li><a href="#model_2c">Model No. 2 C</a></li>
-   <li><a href="#model_3c">Model No. 3 C</a></li>
-   <li><a href="#model_4c">Model No. 4 C</a></li>
-   <li><a href="#model_4_5c">Model No. 4 1/2 C</a></li>
-   <li><a href="#model_5c">Model No. 5 C</a></li>
-   <li><a href="#model_5_25c">Model No. 5 1/4 C</a></li>
-   <li><a href="#model_5_5c">Model No. 5 1/2 C</a></li>
-   <li><a href="#model_6c">Model No. 6 C</a></li>
-   <li><a href="#model_7c">Model No. 7 C</a></li>
-   <li><a href="#model_8c">Model No. 8 C</a></li>
+   <li><a href="#model_1">Model No. 1 Smoothing Plane</a></li>
+   <li><a href="#model_2">Model No. 2 Smoothing Plane</a></li>
+   <li><a href="#model_3">Model No. 3 Smoothing Plane</a></li>
+   <li><a href="#model_4">Model No. 4 Smoothing Plane</a></li>
+   <li><a href="#model_4_1_2">Model No. 4 1/2 Smoothing Plane</a></li>
+   <li><a href="#model_5">Model No. 5 Jack Plane</a></li>
+   <li><a href="#model_5_1_4">Model No. 5 1/4 Jack Plane</a></li>
+   <li><a href="#model_5_1_2">Model No. 5 1/2 Jack Plane</a></li>
+   <li><a href="#model_6">Model No. 6 Fore Plane</a></li>
+   <li><a href="#model_7">Model No. 7 Jointer Plane</a></li>
+   <li><a href="#model_8">Model No. 8 Jointer Plane</a></li>
+   <li><a href="#model_9">Model No. 9 Block Plane</a></li>
+   <li>Model No. 9 1/2 Block Plane</li>
+   <li>Model No. 9 3/4 Block Plane</li>
+   <li>Model No. 10 Rabbet Plane</li>
+   <li>Model No. 10 1/4 Rabbet Plane</li>
+   <li>Model No. 10 1/2 Rabbet Plane</li>
+   <li>Model No. 11 Belt Plane</li>
+   <li>Model No. 11 1/2 Floor Plane</li>
+   <li>Model No. 12 Veneer Scraper</li>
+   <li>Model No. 12 1/4 Veneer Scraper</li>
+   <li>Model No. 12 1/2 Veneer Scraper</li>
+   <li>Model No. 12 3/4 Veneer Scraper</li>
+   <li>Model No. 15 Block Plane</li>
+   <li>Model No. 15 1/2 Block Plane</li>
+   <li>Model No. 16 Block Plane</li>
+   <li>Model No. 17 Block Plane</li>
+   <li>Model No. 18 Block Plane</li>
+   <li>Model No. 19 Block Plane</li>
+   <li>Model No. 20 Circular Plane</li>
+   <li>Model No. 22 Smoothing Plane</li>
+   <li>Model No. 24 Smoothing Plane</li>
+   <li>Model No. 25 Block Plane</li>
+   <li>Model No. 26 Jack Plane</li>
+   <li>Model No. 27 1/2 Jack Plane</li>
+   <li>Model No. 28 Fore Plane</li>
+   <li>Model No. 31 Jointer Plane</li>
+   <li>Model No. 32 Jointer Plane</li>
+   <li>Model No. 35 Smoothing Plane</li>
+   <li>Model No. 36 Smoothing Plane</li>
+   <li>Model No. 37 Smoothing Plane</li>
+   <li>Model No. 39 Dado Plane</li>
+   <li>Model No. 40 Scrub Plane</li>
+   <li>Model No. 40 1/2 Scrub Plane</li>
+   <li>Model No. 45 Combination Plane</li>
+   <li>Model No. 46 Combination Plane</li>
+   <li>Model No. 47 Dado Plane</li>
+   <li>Model No. 48 Tongue and Grove Plane</li>
+   <li>Model No. 49 Tongue and Grove Plane</li>
+   <li>Model No. 50 Combination Plane</li>
+   <li>Model No. 51 Shooting Plane</li>
+   <li>Model No. 52 Shooting Board and Plane</li>
+   <li>Model No. 55 Combination Plane</li>
+   <li>Model No. 56 Box Plane</li>
+   <li>Model No. 57 Box Plane</li>
+   <li>Model No. 60 Block Plane</li>
+   <li>Model No. 60 1/2 Block Plane</li>
+   <li>Model No. 61 Block Plane</li>
+   <li>Model No. 62 Low Angle Plane</li>
+   <li>Model No. 63 Block Plane</li>
+   <li>Model No. 64 Butchers Block Plane</li>
+   <li>Model No. 65 Block Plane</li>
+   <li>Model No. 65 1/2 Block Plane</li>
+   <li>Model No. 70 Box Scraper</li>
+   <li>Model No. 71 Router Plane</li>
+   <li>Model No. 71 1/2 Router Plane</li>
+   <li>Model No. 72 Chamfer Plane</li>
+   <li>Model No. 74 Floor Plane</li>
+   <li>Model No. 75 Rabbet Plane</li>
+   <li>Model No. 78 Filletster and Rabbet Plane</li>
+   <li>Model No. 79 Rabbet Plane</li>
+   <li>Model No. 80 Cabinet Scraper</li>
+   <li>Model No. 81 Cabinet Scraper</li>
+   <li>Model No. 82 Cabinet Scraper</li>
+   <li>Model No. 83 Cabinet Scraper</li>
+   <li>Model No. 85 Cabinet Scraper</li>
+   <li>Model No. 90 Rabbet Plane</li>
+   <li>Model No. 92 Rabbet Plane</li>
+   <li>Model No. 93 Rabbet Plane</li>
+   <li>Model No. 94 Rabbet Plane</li>
+   <li>Model No. 95 Trimming Plane</li>
+   <li>Model No. 96 Chisel Gauge</li>
+   <li>Model No. 97 Edge Plane</li>
+   <li>Model No. 98 Rabbet Plane</li>
+   <li>Model No. 99 Rabbet Plane</li>
+   <li>Model No. 100 Block Plane</li>
+   <li>Model No. 101 Block Plane</li>
+   <li>Model No. 101 1/2 Block Plane</li>
+   <li>Model No. 102 Block Plane</li>
+   <li>Model No. 103 Block Plane</li>
+   <li>Model No. 110 Block Plane</li>
+   <li>Model No. 112 Cabinet Scraper</li>
+   <li>Model No. 113 Circular Plane</li>
+   <li>Model No. 120 Block Plane</li>
+   <li>Model No. 130 Block Plane</li>
+   <li>Model No. 131 Block Plane</li>
+   <li>Model No. 140 Block Plane</li>
+   <li>Model No. 143 Combination Plane</li>
+   <li>Model No. 144 Rounding Plane</li>
+   <li>Model No. 146 Tongue and Grove Plane</li>
+   <li>Model No. 147 Tongue and Grove Plane</li>
+   <li>Model No. 148 Tongue and Grove Plane</li>
+   <li>Model No. 164 Low Angle Plane</li>
+   <li>Model No. 171 Router Plane</li>
+   <li>Model No. 190 Rabbet Plane</li>
+   <li>Model No. 191 Rabbet Plane</li>
+   <li>Model No. 192 Rabbet Plane</li>
+   <li>Model No. 196 Curve Rabbet Plane</li>
+   <li>Model No. 203 Block Plane</li>
+   <li>Model No. 205 Block Plane</li>
+   <li>Model No. 212 Scraper Plane</li>
+   <li>Model No. 220 Block Plane</li>
+   <li>Model No. 238 Plow Plane</li>
+   <li>Model No. 239 Dado Plane</li>
+   <li>Model No. 239 1/2 Dado Plane</li>
+   <li>Model No. 271 Router Plane</li>
+   <li>Model No. 278 Filletster and Rabbet Plane</li>
+   <li>Model No. 282 Scraper</li>
+   <li>Model No. 283 Scraper</li>
+   <li>Model No. 289 Filletster and Rabbet Plane</li>
+   <li>Model No. 378 Rabbet Plane</li>
+   <li>Model No. 444 Dovetail Plane</li>
+   <li>Model No. 602 Smoothing Plane</li>
+   <li>Model No. 603 Smoothing Plane</li>
+   <li>Model No. 604 Smoothing Plane</li>
+   <li>Model No. 604 1/2 Smoothing Plane</li>
+   <li>Model No. 605 Jack Plane</li>
+   <li>Model No. 605 1/4 Jack Plane</li>
+   <li>Model No. 605 1/2 Jack Plane</li>
+   <li>Model No. 606 Fore Plane</li>
+   <li>Model No. 607 Jointer Plane</li>
+   <li>Model No. 608 Jointer Plane</li>
   </ul>
  </article>
  <article id="model_1">
-  <h2>Stanley No. 1 Bench Plane</h2>
+  <h2>Stanley No. 1 Smoothing Plane</h2>
   <p><ul>
    <li>1870 - 1943</li>
    <li>Smoothing Plane</li>
@@ -213,206 +311,137 @@
    <li>Weight: 1-1/8 LBs</li>
    <li>No lateral adjustment feature</li>
   </ul></p>
+  <h3><a href="#model_2">Next No. 2</a></h3>
  </article>
  <article id="model_2">
-  <h2>Stanley No. 2 Bench Plane</h2>
+  <h2>Stanley No. 2 Smoothing Plane</h2>
   <p><ul>
-   <li>1870 - 1958</li>
+   <li>1870 - 1958 Smooth</li>
+   <li>1898 - 1943 Corrugated</li>
    <li>Smoothing Plane</li>
    <li>Length: 7 inches</li>
    <li>Width of cutter: 1-5/8 inches</li>
    <li>Weight: 2-1/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_1">Previous No. 1</a> - <a href="#model_3">Next No. 3</a></h3>
  </article>
  <article id="model_3">
-  <h2>Stanley No. 3 Bench Plane</h2>
+  <h2>Stanley No. 3 Smoothing Plane</h2>
   <p><ul>
-   <li>1870 - 1973</li>
+   <li>1870 - 1973 Smooth</li>
+   <li>1898 - 1972 Corrugated</li>
    <li>Smoothing Plane</li>
    <li>Length: 8 inches</li>
    <li>Width of cutter: 1-3/4 inches</li>
    <li>Weight: 3-1/8 LBs</li>
   </ul></p>
   <a href="images/no3boxlabel.png" target="new"><img src="images/no3boxlabel.png" title="Stanley No. 3 Box Label" /></a>
+  <h3><a href="#model_2">Previous No. 2</a> - <a href="#model_4">Next No. 4</a></h3>
  </article>
  <article id="model_4">
-  <h2>Stanley No. 4 Bench Plane</h2>
+  <h2>Stanley No. 4 Smoothing Plane</h2>
   <p><ul>
-   <li>1870 - 1973</li>
+   <li>1870 - 1973 Smooth</li>
+   <li>1898 - 1973 Corrugated</li>
    <li>Smoothing Plane</li>
    <li>Length: 9 inches or 9-1/4 inches</li>
    <li>Width of cutter: 2 inches</li>
    <li>Weight: 3-3/4 LBs</li></li>
   </ul></p>
+  <h3><a href="#model_3">Previous No. 3</a> - <a href="#model_4_1_2">Next No. 4 1/2</a></h3>
  </article>
- <article id="model_4_5">
-  <h2>Stanley No. 4 Bench Plane</h2>
+ <article id="model_4_1_2">
+  <h2>Stanley No. 4 1/2 Smoothing Plane</h2>
   <p><ul>
-   <li>1884 - 1958</li>
+   <li>1884 - 1958 Smooth</li>
+   <li>1898 - 1958 Corrugated</li>
    <li>Smoothing Plane</li>
    <li>Length: 10 inches</li>
    <li>Width of cutter: 2-3/8 inches</li>
    <li>Weight: 4-3/4 LBs</li></li>
   </ul></p>
+  <h3><a href="#model_4">Previous No. 4</a> - <a href="#model_5">Next No. 5</a></h3>
  </article>
  <article id="model_5">
-  <h2>Stanley No. 5 Bench Plane</h2>
+  <h2>Stanley No. 5 Jack Plane</h2>
   <p><ul>
-   <li>1870 - 1973</li>
+   <li>1870 - 1973 Smooth</li>
+   <li>1898 - 1973 Corrugated</li>
    <li>Jack Plane</li>
    <li>Length: 14 inches</li>
    <li>Width of cutter: 2 inches</li>
    <li>Weight: 4-3/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_4_1_2">Previous No. 4 1/2</a> - <a href="#model_5_1_4">Next No. 5 1/4</a></h3>
  </article>
- <article id="model_5_25">
-  <h2>Stanley No. 5 1/4 Bench Plane</h2>
+ <article id="model_5_1_4">
+  <h2>Stanley No. 5 1/4 Jack Plane</h2>
   <p><ul>
-   <li>1922 - 1973</li>
-   <li>Jack Plane</li>
+   <li>1922 - 1973 Smooth</li>
+   <li>1922 - 1942 Corrugated</li>
+   <li>Jack Plane (also Junior or School)</li>
    <li>Length: 11-1/2 inches</li>
    <li>Width of cutter: 1-3/4 inches</li>
    <li>Weight: 3-3/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_5">Previous No. 5</a> - <a href="#model_5_1_2">Next No. 5 1/2</a></h3>
  </article>
- <article id="model_5_5">
-  <h2>Stanley No. 5 1/2 Bench Plane</h2>
+ <article id="model_5_1_2">
+  <h2>Stanley No. 5 1/2 Jack Plane</h2>
   <p><ul>
-   <li>1898 - 1962</li>
+   <li>1898 - 1962 Smooth</li>
+   <li>1898 - 1958 Corrugated</li>
    <li>Jack Plane</li>
    <li>Length: 15 inches</li>
    <li>Width of cutter: 2-1/4 inches, after 1939 2-3/8 inches</li>
    <li>Weight: 6-3/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_5_1_4">Previous No. 5 1/4</a> - <a href="#model_6">Next No. 6</a></h3>
  </article>
  <article id="model_6">
-  <h2>Stanley No. 6 Bench Plane</h2>
+  <h2>Stanley No. 6 Fore Plane</h2>
   <p><ul>
-   <li>1870 - 1973</li>
+   <li>1870 - 1973 Smooth</li>
+   <li>1898 - 1973 Corrugated</li>
    <li>Fore Plane</li>
    <li>Length: 18 inches</li>
    <li>Width of cutter: 2-3/8 inches</li>
    <li>Weight: 7-3/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_5_1_2">Previous No. 5 1/2</a> - <a href="#model_7">Next No. 7</a></h3>
  </article>
  <article id="model_7">
-  <h2>Stanley No. 7 Bench Plane</h2>
+  <h2>Stanley No. 7 Jointer Plane</h2>
   <p><ul>
-   <li>1870 - 1973</li>
+   <li>1870 - 1973 Smooth</li>
+   <li>1898 - 1964 Corrugated</li>
    <li>Jointer Plane</li>
    <li>Length: 22 inches</li>
    <li>Width of cutter: 2-3/8 inches</li>
    <li>Weight: 8-1/8 LBs</li>
   </ul></p>
+  <h3><a href="#model_6">Previous No. 6</a> - <a href="#model_8">Next No. 8</a></h3>
  </article>
  <article id="model_8">
-  <h2>Stanley No. 8 Bench Plane</h2>
+  <h2>Stanley No. 8 Jointer Plane</h2>
   <p><ul>
-   <li>1870 - 1958</li>
+   <li>1870 - 1958 Smooth</li>
+   <li>1898 - 1958 Corrugated</li>
    <li>Jointer Plane</li>
    <li>Length: 24 inches</li>
    <li>Width of cutter: 2-5/8 inches</li>
    <li>Weight: 9-3/4 LBs</li>
   </ul></p>
+  <h3><a href="#model_7">Previous No. 7</a> - <a href="#model_9">Next No. 9</a></h3>
  </article>
- <article id="model_2c">
-  <h2>Stanley No. 2 Bench Plane Corrugated</h2>
+ <article id="model_9">
+  <h2>Stanley No. 9 Block Plane</h2>
   <p><ul>
-   <li>1898 - 1943</li>
-   <li>Smoothing Plane</li>
-   <li>Length: 7 inches</li>
-   <li>Width of cutter: 1-5/8 inches</li>
-   <li>Weight: 2-1/4 LBs</li>
-  </ul></p>
- </article>
- <article id="model_3c">
-  <h2>Stanley No. 3 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1972</li>
-   <li>Smoothing Plane</li>
-   <li>Length: 8 inches</li>
-   <li>Width of cutter: 1-3/4 inches</li>
-   <li>Weight: 3-1/8 LBs</li>
-  </ul></p>
- </article>
- <article id="model_4c">
-  <h2>Stanley No. 4 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1973</li>
-   <li>Smoothing Plane</li>
-   <li>Length: 9 inches or 9-1/4 inches</li>
-   <li>Width of cutter: 2 inches</li>
-   <li>Weight: 3-3/4 LBs</li></li>
-  </ul></p>
- </article>
- <article id="model_4_5c">
-  <h2>Stanley No. 4 1/2 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1958</li>
-   <li>Smoothing Plane</li>
+   <li>Cabinet Makers Block Plane</li>
+   <li>1867 - 1943</li>
    <li>Length: 10 inches</li>
-   <li>Width of cutter: 2-3/8 inches</li>
-   <li>Weight: 4-3/4 LBs</li></li>
-  </ul></p>
- </article>
- <article id="model_5c">
-  <h2>Stanley No. 5 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1973</li>
-   <li>Jack Plane</li>
-   <li>Length: 14 inches</li>
    <li>Width of cutter: 2 inches</li>
-   <li>Weight: 4-3/4 LBs</li>
-  </ul></p>
- </article>
- <article id="model_5_25c">
-  <h2>Stanley No. 5 1/4 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1922 - 1942</li>
-   <li>Jack Plane</li>
-   <li>Length: 11-1/2 inches</li>
-   <li>Width of cutter: 1-3/4 inches</li>
-   <li>Weight: 3-3/4 LBs</li>
-  </ul></p>
- </article>
- <article id="model_5_5c">
-  <h2>Stanley No. 5 1/2 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1958</li>
-   <li>Jack Plane</li>
-   <li>Length: 15 inches</li>
-   <li>Width of cutter: 2-1/4 inches, after 1939 2-3/8 inches</li>
-   <li>Weight: 6-3/4 LBs</li>
-  </ul></p>
- </article>
- <article id="model_6c">
-  <h2>Stanley No. 6 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1973</li>
-   <li>Fore Plane</li>
-   <li>Length: 18 inches</li>
-   <li>Width of cutter: 2-3/8 inches</li>
-   <li>Weight: 7-3/4 LBs</li>
-  </ul></p>
- </article>
- <article id="model_7c">
-  <h2>Stanley No. 7 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1964</li>
-   <li>Jointer Plane</li>
-   <li>Length: 22 inches</li>
-   <li>Width of cutter: 2-3/8 inches</li>
-   <li>Weight: 8-1/8 LBs</li>
-  </ul></p>
- </article>
- <article id="model_8c">
-  <h2>Stanley No. 8 Bench Plane Corrugated</h2>
-  <p><ul>
-   <li>1898 - 1958</li>
-   <li>Jointer Plane</li>
-   <li>Length: 24 inches</li>
-   <li>Width of cutter: 2-5/8 inches</li>
-   <li>Weight: 9-3/4 LBs</li>
+   <li>Weight: </li>
   </ul></p>
  </article>
  <article id="types">
@@ -722,40 +751,22 @@
   <h4>Victor</h4>
   <p>Leonard Bailey designed planes for Victor after Stanley bought his patents.</p>
   <h4>Sargent</h4>
-  <p>TODO</p>
+  <p>Research needed.</p>
   <h4>Millers Falls</h4>
-  <p></p>
-  <h4>Bedrock</h4>
-  <p>TODO</p>
-  <h4>Keen Kutter</h4>
-  <p>TODO</p>
-  <h4>Fulton</h4>
-  <p>TODO</p>
-  <h4>Craftsman</h4>
-  <p>TODO</p>
-  <h2>Modern Plane Makers</h2>
-  <h4>Bench Dog</h4>
-  <p>TODO</p>
-  <h4>Woodriver</h4>
-  <p>TODO</p>
-  <h4>Clifton</h4>
-  <p>TODO</p>
-  <h4>Ibex</h4>
-  <p>TODO</p>
-  <h4>Pinnacle</h4>
-  <p>TODO</p>
-  <h4>Kunz</h4>
-  <p>TODO</p>
+  <p>Research needed.</p>
   <h4>Veritas</h4>
-  <p>TODO</p>
+  <p>Maker of high end tools including bench planes. Bench planes range from No. 3 to No. 6</p>
+  <a href="https://www.veritastools.ca" target="_new">Website</a>
   <h4>Lie-Nielsen</h4>
-  <p>TODO</p>
-  <h4>Hock</h4>
-  <p>TODO</p>
+  <p>Maker of high end tools including bench planes. From small to the full No. 8 Jointer plane.</p>
+  <a href="https://www.lie-nielsen.com" target="_new">Website</a>
+  <h4>Hock Tools</h4>
+  <p>A maker of high quality blades in the past. The business appears to have been sold.</p>
   <h4>Buck Brothers(Bros.)</h4>
-  <p>TODO</p>
+  <p>Historically a maker of woodworking tools, the name has been used by various owners in recent history. Some research is needed here.</p>
   <h4>Jorgensen</h4>
-  <p>TODO</p>
+  <p>Versions of No. 4, No. 5 and some block planes.</p>
+  <a href="https://ponyjorgensen.com" target="_new">Website</a>
   <h4>Spear and Jackson</h4>
   <p>Screw style cap and many other identical options under different names.</p>
   <h4>Groz</h4>
@@ -849,6 +860,5 @@
    <li><a href="https://www.plane-dealer.com/bailey-type-study" target="new">Plane Dealer</a></li>
   </ul></p>
  </article>
- </div>
  <footer>Stanley Bench Plane Identification - <a href="https://github.com/lathama/Stanley_Plane_Identification" target="new">Source Code</a></footer>
 </body></html>
