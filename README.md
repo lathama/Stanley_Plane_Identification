@@ -17,7 +17,8 @@ View it online via https://lathama.net/vintage/
 
 - [ ] Deeper topics on other manufacturers
 - [ ] Full line of Stanley planes and scrapers
-      - [ ] Block Planes to start
+- [ ] Block Planes
+- [ ] Information on Irons or Blades
 
 ## Ideas
 
