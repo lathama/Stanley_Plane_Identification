@@ -9,10 +9,6 @@ is just text with links to various targets within the same page.
 Download and open the html/index.html file in a browser. `CTRL + o` is a
 common shortcut.
 
-## Online
-
-View it online via https://lathama.net/vintage/
-
 ## TODO
 
 - [ ] Deeper topics on other manufacturers
